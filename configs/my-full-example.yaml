@@ -74,7 +74,7 @@ use_sc: true # use self-connection or not, usually gives big improvement
 
 # # for extxyz file
 dataset: ase
-dataset_file_name: ./AIMD-water/wat_pos_frc.extxyz
+dataset_file_name: ./AIMD_data/wat_pos_frc-10k.extxyz
 ase_args:
   format: extxyz
 include_keys:
@@ -112,9 +112,9 @@ key_mapping:
 # A list of chemical species found in the data. The NequIP atom types will be named after the chemical symbols and ordered by atomic number in ascending order.
 # (In this case, NequIP's internal atom type 0 will be named H and type 1 will be named C.)
 # Atoms in the input will be assigned NequIP atom types according to their atomic numbers.
-# chemical_symbols:
-#   - H
-#   - C
+chemical_symbols:
+  - H
+  - O
 
 # Alternatively, you may explicitly specify which chemical species in the input will map to NequIP atom type 0, which to atom type 1, and so on.
 # Other than providing an explicit order for the NequIP atom types, this option behaves the same as `chemical_symbols`
@@ -133,7 +133,7 @@ key_mapping:
 # This can often be easier to work with, simply make sure the ASE Atoms object
 # has a calculator for which atoms.get_potential_energy() and atoms.get_forces() are defined
 dataset: ase
-dataset_file_name: ./AIMD-water/wat_pos_frc.extxyz                                                       # need to be a format accepted by ase.io.read
+dataset_file_name: ./AIMD_data/wat_pos_frc-10k.extxyz                                                       # need to be a format accepted by ase.io.read
 ase_args:                                                                        # any arguments needed by ase.io.read
   format: extxyz
 
