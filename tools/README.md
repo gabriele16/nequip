@@ -9,7 +9,7 @@ git clone https://github.com/gabriele16/nequip.git
 cd nequip/tools && docker build -f Dockerfile ../ -t nequip-docker:gpu 
 ```
 
-It will take a few minutes to download necessary package and install them.
+It will take some time to download necessary packages and install them.
 
 ### Training a model
 
