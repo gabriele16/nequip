@@ -13,4 +13,4 @@ It will take some time to download necessary packages and install them.
 
 ### Training a model
 
-[Docker Compose](https://docs.docker.com/compose/) can be used for training, deploying a model and also running MD on LAMMPS, as well as the whole pipeline: To that end you can edit the `docker-compose.yml`. Use `docker-compose up` to start the training of a minimal example.
+[Docker Compose](https://docs.docker.com/compose/) can be used for training, deploying a model and also running MD on LAMMPS, as well as the whole pipeline. To that end you can edit the `docker-compose.yml`. Use `docker-compose up` to start the training of a minimal example.
