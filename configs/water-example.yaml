@@ -72,11 +72,6 @@ use_sc: true # use self-connection or not, usually gives big improvement
 # in most cases working with the ase option and an extxyz file is by far the simplest way to do it and we strongly recommend using this
 # simply provide a single extxyz file that contains the structures together with energies and forces (generated with ase.io.write(atoms, format='extxyz', append=True))
 
-# # for extxyz file
-dataset: ase
-dataset_file_name: ./nequip/datasets/AIMD_data/wat_pos_frc-10k.extxyz
-ase_args:
-  format: extxyz
 include_keys:
   - user_label
 key_mapping:
@@ -133,8 +128,8 @@ chemical_symbols:
 # This can often be easier to work with, simply make sure the ASE Atoms object
 # has a calculator for which atoms.get_potential_energy() and atoms.get_forces() are defined
 dataset: ase
-dataset_file_name: ./nequip/data/AIMD_data/wat_pos_frc-10k.extxyz                                                       # need to be a format accepted by ase.io.read
-ase_args:                                                                        # any arguments needed by ase.io.read
+dataset_file_name: ./nequip/datasets/AIMD_data/wat_pos_frc-10k.extxyz # need to be a format accepted by ase.io.read
+ase_args: # any arguments needed by ase.io.read
   format: extxyz
 
 # If you want to use a different dataset for validation, you can specify
