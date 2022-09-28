@@ -74,7 +74,7 @@ use_sc: true # use self-connection or not, usually gives big improvement
 
 # # for extxyz file
 dataset: ase
-dataset_file_name: ./nequip/data/AIMD_data/wat_pos_frc-10k.extxyz
+dataset_file_name: ./nequip/datasets/AIMD_data/wat_pos_frc-10k.extxyz
 ase_args:
   format: extxyz
 include_keys:
