@@ -1,0 +1,12 @@
+version: '2.3'
+services:
+  system:
+    image: "nequip-docker:gpu"
+    container_name: "nequip-train"
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all
+    volumes:
+      - ../:/opt/nequip/
+    command: nequip-train configs/minimal.yaml
