@@ -12,7 +12,7 @@ model_builders:
   - StressForceOutput
   - RescaleEnergyEtc
 
-load_model_state: /content/water-deploy.pth
+load_model_state: /content/results/water/example-run-water
 
 # Two folders will be used during the training: 'root'/process and 'root'/'run_name'
 # run_name contains logfiles and saved models
